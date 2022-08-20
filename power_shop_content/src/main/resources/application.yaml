@@ -1,0 +1,15 @@
+server:
+  port: 8091
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.226.224:8848
+  application:
+    name: power-shop-content
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.226.221:3306/power_shop?characterEncoding=UTF-8
+    username: root
+    password: 1111
+    type: com.alibaba.druid.pool.DruidDataSource

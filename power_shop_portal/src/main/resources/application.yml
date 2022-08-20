@@ -1,0 +1,9 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: power-shop-portal
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.226.224:8848
