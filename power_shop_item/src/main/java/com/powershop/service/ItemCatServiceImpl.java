@@ -45,7 +45,6 @@ public class ItemCatServiceImpl implements ItemCatService {
         criteria.andParentIdEqualTo(parentId);
         List<TbItemCat> oneList = tbItemCatMapper.selectByExample(tbItemCatExample);
         List resultList = new ArrayList();
-        //
         for (TbItemCat tbItemCat : oneList) {
             if (tbItemCat.getIsParent()){
                 //不是父节点
